@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>create event</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+        <div class="container">
+                <form action="/api/event/create" method="POST" role="form">
+                  <legend>craete event</legend>
+                
+                  <div class="form-group">
+                    <label for="name">name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="name" required>
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="about">about</label>
+                    <input type="text" class="form-control" id="about" name="about" placeholder="about" required>
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="location">location</label>
+                    <input type="text" class="form-control" id="location" name="location" placeholder="location" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="date">date</label>
+                    <input type="date" class="form-control" id="date" name="date" placeholder="date" required>
+                  </div>
+
+                  <div class="form-group">
+                     <label for="duration">duration</label>
+                     <input type="text" class="form-control" id="duration" name="duration" placeholder="duration" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create Event</button>
+                   <div class="row center">
+				 </div>
+                </form>
+              </div>
+    
+</body>
+</html>

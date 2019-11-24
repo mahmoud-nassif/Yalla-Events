@@ -1,0 +1,90 @@
+/* basic setup */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+ html{
+    height: 100%;
+    background-color: #ffff;
+    color:#ccc;
+    font-family: 'lato','arial','sans-serif';
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+} 
+
+body{
+    height: 100%;
+} 
+/* /////////////////////////////////////////////// */
+.row{
+    padding: 30px;
+    /* padding-top: 30px; */
+    border-bottom: 0.2px solid #ccc;
+    box-shadow: 1px 0px 2px;
+}
+.row:hover,.row:active{
+    color:#d24142;
+    font-size: 102%;
+    cursor: pointer;
+    box-shadow: 0 3.5px 3.5px #efefef;
+}
+
+/* ------- BUTTONS ------- */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn:hover,
+.btn:active,
+input[type=submit] {
+	background-color: #d24142;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+	background-color: #d24142;
+	border: 1px solid #d24142;
+	color: #fff;
+	margin-right: 15px;
+}
+.btn-full:hover,
+.btn-full:active,
+input[type=submit] {
+	background-color: #d24142;
+	border: 1px solid #d24142;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+	border: 1px solid #d24142;
+	color: #d24142;
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+	border: 1px solid #d24142;
+	color: #fff;
+}
+.btn-disabled:link,
+.btn-disabled:visited {
+	background-color: #ccc;
+	border: 1px solid #ccc;
+	color: #fff;
+	margin-right: 15px;
+	cursor: not-allowed;
+}
+.btn-disabled:hover,
+.btn-disabled:active {
+	background-color: #ccc;
+	border: 1px solid #ccc;
+	cursor: not-allowed;
+}
